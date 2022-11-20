@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #faf7f0;
+}
+.App {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 3% 10%;
+  
+}
+.avatar-image {
+  border: 2px solid #000000;
+  margin: 3%;
+  width:65%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.avatar-card {
+  background-color: #ffffff;
+  flex: 1 1 30%;
+  margin: 1%;
+  border: solid 2px #333;
+  border-radius: 5px;
+}
+.avatar-info{
+  border:10px solid #ffffff;
+  
+}
+.avatar-info h2,
+h1 {
+  padding: 1%;
+  
+}
+.filter-buttons button {
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1% 2%;
+  margin: 1%;
+}
+.filter-buttons button:nth-child(2) {
+  background-color: #fad4d4;
+}
+.filter-buttons button:nth-child(3) {
+  background-color: #b3ffae;
+}
+.filter-buttons button:nth-child(4) {
+  background-color: #ffd6ec;
+}
+.filter-buttons button:nth-child(5) {
+  background-color: #b9e0ff;
+}
+.filter-buttons button:nth-child(1):hover {
+  transform: scale(1.1);
+}
+.filter-buttons button:nth-child(2):hover {
+  transform: scale(1.1);
+}
+.filter-buttons button:nth-child(3):hover {
+  transform: scale(1.1);
+}
+.filter-buttons button:nth-child(4):hover {
+  transform: scale(1.1);
+}
+.filter-buttons button:nth-child(5):hover {
+  transform: scale(1.1);
+}
+
+.loader {
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid #000;
+  width: 50px;
+  height: 50px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width:500px){
+  /* .avatar-image {
+    border: 2px solid #000000;
+    width:80%;
+    border-radius: 50%;
+    overflow: hidden;
+  } */
+  .avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .avatar-card {
+    background-color: #ffffff;
+    flex: 1 1 40%;
+    margin: 1%;
+    border: solid 2px #333;
+    border-radius: 5px;
+  }
+  .avatar-info h2,h1{
+    font-size: 16px;
+  }
+}
